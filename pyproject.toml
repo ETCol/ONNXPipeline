@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "onnx-crn-pipeline"
+version = "1.0.0"
+description = "ONNX perceptron to configurable chemical reaction network pipeline"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Ethan Collinson" }]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.23",
+    "scipy>=1.10",
+    "onnx>=1.15",
+]
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.7"]
+xpath = ["lxml>=4.9"]
+onnxruntime = ["onnxruntime>=1.16"]
+all = [
+    "matplotlib>=3.7",
+    "lxml>=4.9",
+    "onnxruntime>=1.16",
+]
+
+[project.scripts]
+onnx-to-crn = "crn_cli:main"
+
+[project.urls]
+Repository = "https://github.com/ETCol/ONNXPipeline"
+Issues = "https://github.com/ETCol/ONNXPipeline/issues"
+
+[tool.setuptools]
+py-modules = ["onnx_crn_pipeline", "crn_cli", "crn_example"]
+
+[tool.setuptools.packages.find]
+include = ["crn_build_configs*"]

@@ -1,0 +1,6 @@
+# Optional plotting support for --plot
+matplotlib>=3.7
+# Optional full XPath support; the documented XPath subset also has a stdlib fallback
+lxml>=4.9
+# Optional digital ONNX inference for evaluate_onnx_vs_crn.py
+onnxruntime>=1.16
