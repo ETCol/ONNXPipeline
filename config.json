@@ -1,0 +1,20 @@
+{
+  "config_id": "toehold_exchange_threshold",
+  "backend": "library_template",
+  "species_prefix": "",
+  "reporter_role": "ActReporter",
+  "include_gate_fuel": true,
+  "fuel_conc": 10.0,
+  "gate_conc": 1.0,
+  "reporter_conc": 1.0,
+  "k_bind": 1.0,
+  "k_unbind": 0.1,
+  "k_output": 1.0,
+  "k_fuel": 1.0,
+  "k_annihilate": 1.0,
+  "input_scale": 1.0,
+  "weight_scale": 1.0,
+  "bias_shift": 0.0,
+  "round_weights": 6,
+  "emit_comments": true
+}
